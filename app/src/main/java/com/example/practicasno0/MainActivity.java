@@ -13,8 +13,9 @@ import java.text.Normalizer;
 
 public class MainActivity extends AppCompatActivity {
 
-    EditText etNombre,etPassword;
-    Button btnCerrar,btnAccesar,btnNuevo;
+    EditText etNombre, etPassword;
+    Button btnCerrar, btnAccesar, btnNuevo;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,13 +26,22 @@ public class MainActivity extends AppCompatActivity {
         btnAccesar = findViewById(R.id.accesarMain);
         btnCerrar = findViewById(R.id.cerrarMain);
         btnNuevo = findViewById(R.id.segundoActi);
+        etNombre = findViewById(R.id.NombreMain);
+        etPassword = findViewById(R.id.PassMain);
 
         btnAccesar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(MainActivity.this,"accesando",Toast.LENGTH_SHORT).show();
-                Intent FormIntent = new Intent(view.getContext(),Formulario.class);
-                startActivity(FormIntent);
+            String nom = etNombre.getText().toString();
+            String pass = etPassword.getText().toString();
+                if ( nom.equals("danchita") &&  pass.equals("1106Dani") ){
+                    Toast.makeText(MainActivity.this,"accesando",Toast.LENGTH_SHORT).show();
+                    Intent FormIntent = new Intent(view.getContext(),Formulario.class);
+                    startActivity(FormIntent);
+                }else{
+                    Toast.makeText(MainActivity.this,"Datos Incorrectos",Toast.LENGTH_LONG).show();
+                }
+
 
             }
         });
