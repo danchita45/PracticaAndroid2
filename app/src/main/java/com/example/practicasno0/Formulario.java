@@ -32,7 +32,7 @@ public class Formulario extends AppCompatActivity {
         camara.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent a  = new Intent(this, Camara.class);
+                Intent a  = new Intent(Formulario.this , Camara.class );
                 startActivity(a);
 
             }
