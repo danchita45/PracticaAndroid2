@@ -14,83 +14,90 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:orientation="vertical">
-            <TextView
+            <EditText
+                android:id="@+id/editTextNombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/forms"
-                android:textAlignment="center"/>
+                android:hint="Nombre" />
+
             <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/nombre"/>
-            <EditText
+                android:id="@+id/editTextTelefono"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="phone"
-                android:hint="@string/Telefono"/>
+                android:hint="Teléfono" />
+
             <EditText
+                android:id="@+id/editTextCumple"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="date"
-                android:hint="@string/cumple"/>
+                android:hint="Fecha de Cumpleaños" />
+
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/Genero"
-                android:textAlignment="center"/>
+                android:text="Género"
+                android:textAlignment="center" />
+
             <RadioGroup
+                android:id="@+id/radioGroupGenero"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <RadioButton
+                    android:id="@+id/radioButtonMujer"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/mujer"
-                    />
+                    android:text="Mujer" />
+
                 <RadioButton
+                    android:id="@+id/radioButtonHombre"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/hombre"
-                    />
+                    android:text="Hombre" />
             </RadioGroup>
 
             <TextView
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/color_preferido"
-                android:textAlignment="center"/>
+                android:text="Colores Preferidos"
+                android:textAlignment="center" />
+
             <CheckBox
+                android:id="@+id/checkBoxRojo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/Rojo"/>
+                android:text="Rojo" />
+
             <CheckBox
+                android:id="@+id/checkBoxVerde"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/verde"/>
+                android:text="Verde" />
             <CheckBox
+                android:id="@+id/checkBoxAzul"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/amarillo"/>
+                android:text="Azul" />
             <CheckBox
+                android:id="@+id/checkBoxAmarillo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/morado"/>
+                android:text="Amarillo" />
             <CheckBox
+                android:id="@+id/checkBoxMorado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/azul"/>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/azul"/>
-            <CheckBox
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/azul"/>
+                android:text="Morado" />
+
+            <!-- Agrega los otros CheckBox para los colores aquí -->
+
             <Button
-                android:id="@+id/btnFormLimpiar"
+                android:id="@+id/btnCamara"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/limpiar"/>
+                android:text="Camara"/>
             <Button
                 android:id="@+id/btnFormMostrar"
                 android:layout_width="match_parent"
