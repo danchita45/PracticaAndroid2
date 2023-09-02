@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PracticasNo0</string>
+    <string name="usuario">Ingrese Pass</string>
+    <string name="Password"> Pass</string>
+    <string name="cerrar"> Salir</string>
+    <string name="accesar"> Ingresar</string>
+    <string name="forms"> Formulario</string>
+    <string name="saludo"> Bienvenidos</string>
+    <string name="nombre"> Nombre</string>
+    <string name="Telefono"> Telefono</string>
+    <string name="Genero"> Genero</string>
+    <string name="mujer"> mujer</string>
+    <string name="hombre"> hombre</string>
+    <string name="color_preferido"> Color favorito</string>
+    <string name="Color"> Color </string>
+    <string name="Rojo"> Rojo </string>
+    <string name="verde"> verde </string>
+    <string name="amarillo"> amarillo </string>
+    <string name="azul"> azul </string>
+    <string name="morado"> morado </string>
+    <string name="limpiar"> limpiar </string>
+    <string name="mostrar"> mostrar </string>
+    <string name="datos"> datos </string>
+    <string name="tfoto"> foto </string>
+    <string name="camara"> camara </string>
+    <string name="descripcion"> descripcion </string>
+    <string name="creditos"> creditos </string>
+    <string name="cumple"> Cumpleaños </string>
+
+</resources>
